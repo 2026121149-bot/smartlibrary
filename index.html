@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In | SmartLibrary</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="login-page">
+
+    <main class="login-container">
+
+        <!-- LEFT PANEL -->
+
+        <section class="login-left">
+
+            <!-- Website Branding -->
+
+            <div class="login-brand">
+
+                <img src="images/assets/uitm-logo.jpg"
+                     alt="UiTM Logo"
+                     class="university-logo">
+
+                <span>SmartLibrary</span>
+
+            </div>
+
+            <!-- Student Illustration -->
+
+            <div class="illustration-container">
+
+                <img src="images/assets/student-illustration.jpg"
+                     alt="Student reading a book"
+                     class="student-illustration">
+
+            </div>
+
+            <!-- Welcome Message -->
+
+            <div class="welcome-content">
+
+                <h1>Learn. Explore. Discover.</h1>
+
+                <p>
+                    Your gateway to academic knowledge
+                    and smarter learning.
+                </p>
+
+            </div>
+
+            <div class="left-footer">
+
+                Your digital campus library.
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT PANEL -->
+
+        <section class="login-right">
+
+            <div class="login-form-container">
+
+                <!-- Library Icon -->
+
+                <div class="login-icon">
+
+                    <i class="bi bi-book"></i>
+
+                </div>
+
+                <!-- Login Heading -->
+
+                <h2>Welcome back.</h2>
+
+                <p class="login-description">
+                    Enter your details to continue.
+                </p>
+
+                <!-- Error Message -->
+
+                <div class="alert alert-danger d-none"
+                     id="loginError"
+                     role="alert">
+                </div>
+
+
+                <!-- LOGIN FORM -->
+
+                <form id="loginForm">
+
+                    <!-- Student ID -->
+
+                    <div class="mb-3">
+
+                        <label for="studentId"
+                               class="form-label">
+
+                            Student ID
+
+                        </label>
+
+                        <div class="custom-input">
+
+                            <i class="bi bi-person"></i>
+
+                            <input type="text"
+                                   id="studentId"
+                                   name="studentId"
+                                   placeholder="Enter student ID"
+                                   autocomplete="username"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="mb-4">
+
+                        <label for="password"
+                               class="form-label">
+
+                            Password
+
+                        </label>
+
+                        <div class="custom-input">
+
+                            <i class="bi bi-lock"></i>
+
+                            <input type="password"
+                                   id="password"
+                                   name="password"
+                                   placeholder="Enter password"
+                                   autocomplete="current-password"
+                                   required>
+
+                            <button type="button"
+                                    id="togglePassword"
+                                    class="password-toggle"
+                                    aria-label="Show or hide password">
+
+                                <i class="bi bi-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Sign In Button -->
+
+                    <button type="submit"
+                            class="login-button">
+
+                        Sign In
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- Registration Link -->
+
+                <div class="register-link">
+
+                    New student?
+
+                    <a href="register.html">
+                        Create an account
+                    </a>
+
+                </div>
+
+
+                <!-- Footer -->
+
+                <div class="login-footer">
+
+                    &copy; 2026 SmartLibrary.
+                    Student Project.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,703 @@
+
+/* ========================================
+   SMARTLIBRARY - GLOBAL STYLE
+======================================== */
+
+:root {
+    --primary: #35205c;
+    --primary-hover: #493078;
+    --secondary: #8b6db7;
+    --lavender: #f0eafa;
+    --background: #f7f6fb;
+    --white: #ffffff;
+    --text-dark: #21182e;
+    --text-muted: #85818e;
+    --border: #e4e0ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   LOGIN PAGE
+======================================== */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1150px;
+    min-height: 680px;
+    background-color: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(53, 32, 92, 0.08);
+}
+
+
+/* ========================================
+   LEFT PANEL
+======================================== */
+
+.login-left {
+    width: 50%;
+    background: linear-gradient(
+        145deg,
+        #35205c,
+        #493078
+    );
+    color: var(--white);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Website Branding */
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.university-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.login-brand span {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+
+/* Student Illustration */
+
+.illustration-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.student-illustration {
+    width: 100%;
+    max-width: 360px;
+    max-height: 340px;
+    object-fit: contain;
+    animation: floating 4s ease-in-out infinite;
+}
+
+
+/* Floating Animation */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Welcome Message */
+
+.welcome-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.welcome-content p {
+    font-size: 14px;
+    color: #ddd3ef;
+    line-height: 1.8;
+    max-width: 350px;
+}
+
+.left-footer {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #c9b9e3;
+}
+
+
+/* ========================================
+   RIGHT PANEL
+======================================== */
+
+.login-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--white);
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 360px;
+}
+
+
+/* Library Icon */
+
+.login-icon {
+    width: 55px;
+    height: 55px;
+    background-color: var(--lavender);
+    color: var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+
+/* Login Heading */
+
+.login-form-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    margin-bottom: 10px;
+}
+
+.login-description {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   INPUT FIELDS
+======================================== */
+
+.form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.custom-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0 15px;
+    min-height: 52px;
+    background-color: var(--white);
+    transition: 0.2s ease;
+}
+
+.custom-input:focus-within {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(139, 109, 183, 0.12);
+}
+
+.custom-input i {
+    color: #9690a0;
+    font-size: 17px;
+}
+
+.custom-input input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text-dark);
+    padding: 12px 0;
+}
+
+.custom-input input::placeholder {
+    color: #aaa5b2;
+    font-size: 13px;
+}
+
+
+/* Show and Hide Password */
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.password-toggle:hover i {
+    color: var(--primary);
+}
+
+
+/* ========================================
+   LOGIN BUTTON
+======================================== */
+
+.login-button {
+    width: 100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 5px 15px rgba(53, 32, 92, 0.15);
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   REGISTRATION LINK
+======================================== */
+
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.register-link a {
+    color: var(--primary);
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.login-footer {
+    text-align: center;
+    color: #aaa5b2;
+    font-size: 11px;
+    margin-top: 45px;
+}
+
+
+/* ========================================
+   ERROR MESSAGE
+======================================== */
+
+#loginError {
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .login-left {
+        padding: 30px;
+    }
+
+    .login-right {
+        padding: 35px;
+    }
+
+    .welcome-content h1 {
+        font-size: 27px;
+    }
+
+    .student-illustration {
+        max-width: 280px;
+    }
+
+}
+
+
+/* Mobile Phone */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        padding: 20px;
+    }
+
+    .login-container {
+        flex-direction: column;
+        min-height: auto;
+        max-width: 480px;
+        border-radius: 18px;
+    }
+
+    .login-left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .login-right {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .login-brand span {
+        font-size: 21px;
+    }
+
+    .university-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .student-illustration {
+        max-width: 200px;
+    }
+
+    .illustration-container {
+        padding: 20px 0;
+    }
+
+    .welcome-content h1 {
+        font-size: 23px;
+    }
+
+    .welcome-content p {
+        font-size: 13px;
+    }
+
+    .left-footer {
+        display: none;
+    }
+
+    .login-form-container h2 {
+        font-size: 28px;
+    }
+
+    .login-footer {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .student-illustration {
+        animation: none;
+    }
+
+    .login-button {
+        transition: none;
+    }
+
+}
+
+
+
+/* DASHBOARD LAYOUT */
+
+.dashboard-page {
+    background: var(--background);
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background: var(--primary);
+    color: white;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.sidebar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.menu-label {
+    color: #c9b9e3;
+    font-size: 11px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+.sidebar-menu a, .logout-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #e5dcef;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active,
+.logout-button:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.logout-button {
+    margin-top: auto;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+/* WELCOME BANNER */
+
+.welcome-banner {
+    background: var(--lavender);
+    color: var(--primary);
+    border-radius: 15px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.welcome-banner h3 {
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.welcome-banner p {
+    font-size: 14px;
+    color: #75618e;
+}
+
+.welcome-banner img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* REUSABLE CARDS AND CHARTS */
+
+.stat-card, .content-card {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(53,32,92,0.04);
+}
+
+.stat-card h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.text-purple {
+    color: var(--primary);
+}
+
+.chart-container {
+    position: relative;
+    height: 260px;
+}
+
+/* REUSABLE BUTTON */
+
+.btn-primary {
+    --bs-btn-bg: #35205c;
+    --bs-btn-border-color: #35205c;
+    --bs-btn-hover-bg: #493078;
+    --bs-btn-hover-border-color: #493078;
+    --bs-btn-active-bg: #493078;
+    --bs-btn-active-border-color: #493078;
+}
+
+/* RESPONSIVE DASHBOARD */
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar-brand {
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .welcome-banner img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .welcome-banner h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* BOOK CATALOGUE */
+
+.book-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(53,32,92,0.08);
+}
+
+.book-cover {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: #f0eafa;
+    padding: 15px;
+}
+
+.book-card h6 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.book-category {
+    color: var(--secondary);
+    font-size: 12px;
+}
+
+.book-placeholder {
+    height: 240px;
+    background: #f0eafa;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+
+/* PROFILE AVATAR */
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* IMAGE FRAME DESIGN */
+
+.university-logo,
+.sidebar-brand img {
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.student-illustration {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
