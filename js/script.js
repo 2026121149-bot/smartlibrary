@@ -201,7 +201,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "A-02",
             quantity: 4,
             available: 4,
-            cover: "images/books/database.jpg"
+            cover: "images/assets/BT2.jpg"
         },
         {
             id: "B003",
@@ -212,7 +212,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "B-01",
             quantity: 6,
             available: 6,
-            cover: "images/books/project.jpg"
+            cover: "images/assets/BT3.jpg"
         },
         {
             id: "B004",
@@ -223,7 +223,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "B-02",
             quantity: 5,
             available: 5,
-            cover: "images/books/research.jpg"
+            cover: "images/assets/BT4.jpg"
         },
         {
             id: "B005",
@@ -234,7 +234,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "C-01",
             quantity: 4,
             available: 4,
-            cover: "images/books/information.jpg"
+            cover: "images/assets/BT5.jpg"
         },
         {
             id: "B006",
@@ -245,7 +245,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "C-02",
             quantity: 6,
             available: 6,
-            cover: "images/books/datascience.jpg"
+            cover: "images/assets/BT6.jpg"
         }
     ];
 
