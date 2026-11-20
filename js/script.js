@@ -190,7 +190,7 @@ if (!localStorage.getItem("sampleBooksLoaded")) {
             location: "A-01",
             quantity: 5,
             available: 5,
-            cover: "images/books/mis.jpg"
+            cover: "images/assets/BT1.jpg"
         },
         {
             id: "B002",
