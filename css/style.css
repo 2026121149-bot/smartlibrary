@@ -701,3 +701,45 @@ a {
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* DEMO LOGIN */
+
+.demo-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.demo-divider::before,
+.demo-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.demo-login-button {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--secondary);
+    border-radius: 12px;
+    background: var(--lavender);
+    color: var(--primary);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.demo-login-button:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.demo-description {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+}

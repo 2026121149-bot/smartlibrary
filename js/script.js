@@ -2193,3 +2193,22 @@ if (profileForm && currentStudent) {
     loadProfileStatistics();
 
 }
+
+
+// DEMO ACCOUNT LOGIN
+
+const demoLoginBtn = document.getElementById("demoLoginBtn");
+
+if (demoLoginBtn) {
+
+    demoLoginBtn.addEventListener("click", function () {
+
+        document.getElementById("studentId").value = "2026123456";
+
+        document.getElementById("password").value = "123456";
+
+        document.getElementById("loginForm").requestSubmit();
+
+    });
+
+}
